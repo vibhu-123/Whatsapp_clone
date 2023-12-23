@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat application</title>
+    <link rel="stylesheet" type="text/css" href="CloneCSS.css">
+    <script src="CloneJS.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftSide">
+            <header class="search_bar">
+                <img src="https://e1.pxfuel.com/desktop-wallpaper/493/47/desktop-wallpaper-41-dp-for-instagram-pics-that-are-like-by-millions-instagram-dp-boys.jpg"
+                    alt="DP">
+                <ul>
+                    <li><ion-icon name="scan-circle-outline"></ion-icon></li>
+                    <li><ion-icon name="chatbox"></ion-icon></li>
+                    <li><ion-icon name="ellipsis-vertical"></ion-icon></li>
+                </ul>
+            </header>
+            <div class="search">
+                <div>
+                    <input id="inp" onkeyup="effective()" type="text" placeholder="search or start new chat">
+                    <ion-icon name="search-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="chatbox"> 
+                <div class="block" onclick="pen6()" ondblclick="new1()" >
+                    <div class="imgbx">
+                        <img class="image"
+                            src="https://pratidin24ghanta.com/wp-content/uploads/2023/02/Radhe-Krishna-Ki-Photo-HD_after.jpg"
+                            class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4 class="nm">Papa Ji</h4>
+                            <p class="time">10:20 pm</p>
+                        </div>
+                        <div class="message">
+                            <p>Hello! My dear Son  </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block unread" id="ab1" ondblclick="new1()" onclick="pen()">
+                    <div class="imgbx">
+                        <img class="image" src="https://i.pinimg.com/474x/3b/75/7f/3b757f815c429fef230ce1333d3f696c.jpg"
+                            class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4 class="nm">Tushar Yadav</h4>
+                            <p class="time">9:46 am</p>
+                        </div>
+                        <div class="message">
+                            <p>Tell me one thing </p>
+                            <b>3</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block unread" onclick="pen1()" ondblclick="new1()">
+                    <div class="imgbx">
+                        <img class="image"
+                            src="https://i.pinimg.com/originals/2b/93/fb/2b93fbacb0a85a9e59650bce7bc8f384.jpg"
+                            class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4 class="nm">Anushka Sharma</h4>
+                            <p class="time">yesterday</p>
+                        </div>
+                        <div class="message">
+                            <p>kal college ke baad milna... </p>
+                            <b>1</b>
+                        </div>
+                    </div>
+                 </div>
+
+                <div class="block unread" onclick="pen2()" ondblclick="new1()">
+                    <div class="imgbx">
+                        <img class="image"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjGyCrEl6wQH4sfJ3hsLU4e8V9xQty8u4qN4Fcf1WOHw&usqp=CAU&ec=48665699"
+                            class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4 class="nm">Rohan Verma</h4>
+                            <p class="time">28 May</p>
+                        </div>
+                        <div class="message">
+                            <p>Rohan here.Tell me something about you </p>
+                            <b>5</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block" onclick="pen3()" ondblclick="new1()">
+                    <div class="imgbx">
+                        <img class="image"
+                            src="https://funylife.in/wp-content/uploads/2022/11/20221105_164725-1024x1024.jpg"
+                            class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4 class="nm">Kiara kumari</h4>
+                            <p class="time">28 May</p>
+                        </div>
+                        <div class="message">
+                            <p>kal mujhe college ke baad milna </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block" onclick="pen4()" ondblclick="new1()">
+                    <div class="imgbx">
+                        <img class="image"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwtvrUSTE6mkWYblnAM_7QHpIVZpqB2P0kV3ddi4nRVA&usqp=CAU&ec=48665699"
+                            class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4 class="nm">Priyana Chaudhay Singh</h4>
+                            <p class="time">26May</p>
+                        </div>
+                        <div class="message">
+                            <p>call me. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block" onclick="pen5()" ondblclick="new1()">
+                    <div class="imgbx">
+                        <img class="image"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVYWl_8iBFslVBZUNtUzmWXDs0NGY-SIUnFDrTpMsNjA&usqp=CAU&ec=48665699"
+                            class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4 class="nm">Sana Mirza M.P.</h4>
+                            <p class="time">25 May</p>
+                        </div>
+                        <div class="message">
+                            <p>Start chat </p>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="block" onclick="pen7()" ondblclick="new1()">
+                    <div class="imgbx">
+                        <img class="image"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT3uSnu3Ici1ez0hS6LHqc90uOzWOU7rY3UUbP1taVSQ&usqp=CAU&ec=48665699"
+                            class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4 class="nm">Mama Ji</h4>
+                            <p class="time">10:46</p>
+                        </div>
+                        <div class="message">
+                            <p>Hello! Riya here.Tell me something about you </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block" onclick="pen11()" ondblclick="new1()">
+                    <div class="imgbx">
+                        <img class="image"
+                            src="https://www.oneindia.com/ph-big/2022/11/urfi-javed-photos-photos_166884392300.jpg"
+                            class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4 class="nm">Urfi Javed</h4>
+                            <p class="time">10:46pm</p>
+                        </div>
+                        <div class="message">
+                            <p>Hello! Priya here.Tell me something about you </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block" onclick="pen8()" ondblclick="new1()">
+                    <div class="imgbx">
+                        <img class="image" src="https://live.staticflickr.com/3030/2658283615_cab8af9a50_c.jpg"
+                            class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4 class="nm">johnpur vale mausa</h4>
+                            <p class="time">10:46</p>
+                        </div>
+                        <div class="message">
+                            <p>Hello! Riya here.Tell me something about you </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block" onclick="pen9()" ondblclick="new1()">
+                    <div class="imgbx">
+                        <img class="image"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuqUrZZGM9_cL6LvTowNoXjwlyawe726_7NvxE79r3VA&usqp=CAU&ec=48665699&reload=on"
+                            class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4 class="nm">Love</h4>
+                            <p class="time">10:46</p>
+                        </div>
+                        <div class="message">
+                            <p>Hello! Riya here.Tell me something about you </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block" onclick="pen10()" ondblclick="new1()">
+                    <div class="imgbx">
+                        <img class="image"
+                            src="https://i.guim.co.uk/img/media/c5b63fbdee2e371cd3c4d70b482b45ce3500432e/0_223_4395_2637/master/4395.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=188ec718e7fbc628439a067afb56c4d9"
+                            class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4 class="nm">Ravi Shastri</h4>
+                            <p class="time">10:46</p>
+                        </div>
+                        <div class="message">
+                            <p>Hello! Iyyar here.Tell me something about you </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="rightSide">
+            <header class="header">
+                <div class="imgText">
+                    <div class="userimg">
+                        <img class="ig" id="change_photo" src="https://pratidin24ghanta.com/wp-content/uploads/2023/02/Radhe-Krishna-Ki-Photo-HD_after.jpg"
+                            class="cover">
+                    </div>
+                    <h4 id="change_name">Papa ji<br><span>Online</span></h4>
+                </div>
+                <ul class="nav_icons">
+                    <li><ion-icon name="videocam-outline"></ion-icon></li>
+                    <li><ion-icon name="call-outline"></ion-icon></li>
+                    <li><ion-icon name="search-outline"></ion-icon></li>
+                </ul>
+            </header>
+            <div class="display" id="final_3">
+             <input id="bhej" type="text" style="width:300px; height:30px;background-color:#229853;font-weight:bold;"><br>
+             <input id="bhej1" type="text" style="width:300px; height:13px;background-color:white;font-weight:bold;margin-left:700px;">
+             <input id="bhej2" type="text" style="width:300px; height:30px;background-color:#229853;font-weight:bold"><br>
+             <input id="bhej3" type="text" style="width:300px; height:30px;background-color:white;font-weight:bold;margin-left:700px">
+             <input id="bhej4" type="text" style="width:300px; height:30px;background-color:#229853;font-weight:bold"><br>
+             <input id="bhej5" type="text" style="width:300px; height:30px;background-color:white;font-weight:bold;margin-left:700px">
+             <input id="bhej6" type="text" style="width:300px; height:30px;background-color:#229853;font-weight:bold"><br>
+             <input id="bhej7" type="text" style="width:300px; height:30px;background-color:white;font-weight:bold;margin-left:700px">
+             <input id="bhej8" type="text" style="width:300px; height:30px;background-color:#229853;font-weight:bold"><br>
+             <input id="bhej9" type="text" style="width:300px; height:30px;background-color:white;font-weight:bold;margin-left:700px">
+             <input id="bhej10" type="text" style="width:300px; height:30px;background-color:#229853;font-weight:bold"><br>
+             <input id="bhej11" type="text" style="width:300px; height:30px;background-color:white;font-weight:bold;margin-left:700px">
+             <input id="bhej12" type="text" style="width:300px; height:30px;background-color:#229853;font-weight:bold"><br>
+             <input id="bhej13" type="text" style="width:300px; height:30px;background-color:white;font-weight:bold;margin-left:700px">
+             <input id="bhej14" type="text" style="width:300px; height:30px;background-color:#229853;font-weight:bold"><br>
+             <input id="bhej15" type="text" style="width:300px; height:30px;background-color:white;font-weight:bold;margin-left:700px">
+            </div>
+             <div class="send">
+                <input id="send" type="text" placeholder="Enter Text Here" style="width:300px; height:30px; ">
+                <span><button style="width:100px; height:30px; border-radius: 10px;font-weight:bold" onclick="bhejna()">Send</button></span>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
